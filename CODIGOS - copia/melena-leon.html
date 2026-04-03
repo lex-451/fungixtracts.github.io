@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melena de León - FungiXtracts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner-promo">
+        <p>¡Llevate 4 al precio de 3!</p>
+    </div>
+    <header class="intro-header">
+        <div class="intro-container">
+            <div style="display: flex; align-items: center; gap: 16px; flex: 1;">
+                <img src="img/fungi.jpg" alt="FungiXtracts Logo" class="intro-logo">
+                <a href="index.html" class="intro-title" style="text-decoration: none; color: #24594a; cursor: pointer;">FungiXtracts</a>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Inicio</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="acerca-de.html">Acerca de</a>
+            </nav>
+            <button class="carrito-btn" onclick="abrirCarrito()">
+                🛒 Carrito
+                <span id="carrito-contador" style="display: none;">0</span>
+            </button>
+        </div>
+    </header>
+    <div style="max-width: 1200px; margin: 60px auto; padding: 0 16px;">
+        <div style="display: flex; gap: 40px; align-items: flex-start; margin-bottom: 40px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 280px; text-align: center;">
+                <div class="carrusel-producto" id="carrusel-melena" style="position:relative; max-width:400px; margin:0 auto;">
+                    <img src="img/melena-leon.png" alt="Melena de León Suplemento" style="width:100%; border-radius:28px; box-shadow:0 4px 24px rgba(44,62,80,0.18);">
+                    <img src="https://images.unsplash.com/photo-1552591092-5b0694c9b5d5?w=800&h=600&fit=crop" alt="Melena de León natural" style="width:100%; border-radius:28px; box-shadow:0 4px 24px rgba(44,62,80,0.18);">
+                </div>
+                <div style="font-size:0.95em; color:#888; margin-top:8px;">Toca la imagen o usa las flechas para ver más</div>
+            </div>
+            <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; justify-content: flex-start; background: rgba(255,255,255,0.93); border-radius: 28px; box-shadow: 0 4px 24px rgba(44, 62, 80, 0.18); padding: 40px;">
+                <h1 style="font-size: 2.2em; color: #24594a; margin-top: 0; margin-bottom: 20px;">Melena de León</h1>
+                <p style="font-size: 1.05em; color: #555; line-height: 1.7; margin-bottom: 25px;">
+                    Potencia tu mente con Melena de León, el nootropico natural que despierta tu maximo <span class="brand-highlight">potencial cognitivo</span>. Ideal para estudiantes, profesionales y creativos.
+                </p>
+                <div style="background: rgba(59, 124, 108, 0.1); padding: 20px; border-radius: 12px; margin-bottom: 30px; border-left: 4px solid #3b7c6c;">
+                    <p style="margin: 0; color: #24594a; font-weight: 600;">Disponible en:</p>
+                    <p style="margin: 8px 0 0 0; color: #555; font-size: 0.95em;">✓ Medio Líquido · rinde aprox. 4 semanas<br>✓ Cápsulas · rinden aprox. 5 semanas</p>
+                </div>
+                <div style="display: flex; gap: 12px; flex-direction: column;">
+                    <button class="card-btn" onclick="abrirModalCompra('Melena de León')" style="cursor: pointer;">➕ Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        <div style="background: rgba(255,255,255,0.93); border-radius: 28px; box-shadow: 0 4px 24px rgba(44, 62, 80, 0.18); padding: 40px; margin-bottom: 40px;">
+            <h2 style="font-size: 2em; color: #24594a; margin-bottom: 20px;">¿Qué es la Melena de León?</h2>
+            <p style="font-size: 1.1em; color: #444; line-height: 1.6; margin-bottom: 20px;">
+                La Melena de Leon (Hericium erinaceus) es un hongo medicinal conocido por su apariencia unica que se asemeja a la melena de un leon. Es reconocido por sus propiedades <span class="brand-highlight">neuroprotectoras</span> y <span class="brand-highlight">cognitivas</span>.
+            </p>
+            <p style="font-size: 1.1em; color: #444; line-height: 1.6; margin-bottom: 20px;">
+                Es un hongo que ha ganado popularidad en el mundo de la salud y el bienestar debido a sus beneficios para la <span class="brand-highlight">cognicion</span> y el <span class="brand-highlight">sistema nervioso</span>. Este hongo, que crece de forma silvestre en los bosques de Asia, Europa y America del Norte, tambien se cultiva con fines medicinales.
+            </p>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.93); border-radius: 28px; box-shadow: 0 4px 24px rgba(44, 62, 80, 0.18); padding: 40px; margin-bottom: 40px;">
+            <h2 style="font-size: 2em; color: #24594a; margin-bottom: 30px;">BENEFICIOS</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>PROPIEDADES ANTIOXIDANTES</h3>
+                    <p>Rico en antioxidantes que protegen las células del daño causado por radicales libres y estrés oxidativo.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>REDUCE EL ESTRÉS Y LA ANSIEDAD</h3>
+                    <p>Tiene efectos ansiolíticos y antidepresivos.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>MEJORA LA MEMORIA Y CONCENTRACIÓN</h3>
+                    <p>Aumenta la memoria, la función cognitiva, la concentración y el enfoque mental.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>APOYO A LA SALUD CEREBRAL</h3>
+                    <p>Estimula el crecimiento de células nerviosas y promueve la producción de factores de crecimiento nervioso.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>PROMUEVE LA SALUD DIGESTIVA</h3>
+                    <p>Favorece el crecimiento de bacterias beneficiosas en el intestino y mejora la función gastrointestinal.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>FORTALECE EL SISTEMA INMUNOLÓGICO</h3>
+                    <p>Estimula el sistema inmunológico para combatir infecciones y enfermedades.</p>
+                </div>
+            </div>
+        </div>
+        <div style="background: rgba(255,255,255,0.93); border-radius: 28px; box-shadow: 0 4px 24px rgba(44, 62, 80, 0.18); padding: 40px;">
+            <h2 style="font-size: 2em; color: #24594a; margin-bottom: 20px;">Presentaciones Disponibles</h2>
+            <p style="font-size: 1.1em; color: #444; line-height: 1.8; margin-bottom: 18px;">
+                <strong style="color: #24594a;">Cápsulas:</strong> 75 cápsulas de 500 mg c/u. Dosis recomendada: 2-4 cápsulas diarias. Rendimiento aproximado: 5 semanas. Precio por presentación: $550 MXN.
+            </p>
+            <p style="font-size: 1.1em; color: #444; line-height: 1.8; margin: 0;">
+                <strong style="color: #24594a;">Medio Líquido:</strong> Extracto líquido de 30 ml. Dosis recomendada: 1 ml (30 gotas) diarias. Rendimiento aproximado: 4 semanas. Precio por presentación: $450 MXN.
+            </p>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div class="site-footer__brand">
+                <a href="index.html" class="site-footer__logo-link">
+                    <img src="img/fungi.jpg" alt="FungiXtracts Logo" class="site-footer__logo">
+                    <span>FungiXtracts</span>
+                </a>
+                <p>Extractos de hongos medicinales elaborados para apoyar tu bienestar con opciones naturales y practicas.</p>
+            </div>
+            <div class="site-footer__column">
+                <h3>Explora</h3>
+                <a href="index.html">Inicio</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="acerca-de.html">Acerca de</a>
+            </div>
+            <div class="site-footer__column">
+                <h3>Contacto</h3>
+                <a href="https://wa.me/15551234567?text=Hola%20FungiXtracts%2C%20quiero%20mas%20informacion" target="_blank" rel="noopener noreferrer">WhatsApp: +1 (555) 123-4567</a>
+                <a href="mailto:info@fungixtracts.com">info@fungixtracts.com</a>
+                <p>Miercoles y sabados de 10:00 a 15:00 hrs</p>
+            </div>
+            <div class="site-footer__column">
+                <h3>Siguenos</h3>
+                <a href="https://www.instagram.com/fungixtracts/" target="_blank" rel="noopener noreferrer" class="site-footer__social-link" aria-label="Instagram de FungiXtracts">
+                    <svg class="site-footer__social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95Zm8.95 1.35a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 6.85A5.15 5.15 0 1 1 6.85 12 5.16 5.16 0 0 1 12 6.85Zm0 1.8A3.35 3.35 0 1 0 15.35 12 3.35 3.35 0 0 0 12 8.65Z"/>
+                    </svg>
+                    <span>@fungixtracts</span>
+                </a>
+                <p>Novedades, promociones y contenido de bienestar.</p>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <p>&copy; 2026 FungiXtracts. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Carrito -->
+    <div id="modal-carrito">
+        <div class="carrito-modal-content">
+            <h2>Mi Carrito</h2>
+            <div id="lista-carrito"></div>
+            <div id="total-carrito" style="display: none;"></div>
+            <div class="carrito-botones">
+                <button class="carrito-btn-cerrar" onclick="cerrarCarrito()">Seguir Comprando</button>
+                <button class="carrito-btn-comprar" onclick="procederCompra()">Proceder a Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up Continuar Compra -->
+    <div id="popup-continuarCompra">
+        <div class="popup-content">
+            <h3>¿Deseas agregar más productos?</h3>
+            <p>Aquí están nuestros otros productos disponibles:</p>
+            <div id="popup-productos"></div>
+            <button class="popup-btn-cerrar" onclick="cerrarPopupCompra()">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Modal Compra con Cantidad -->
+    <div id="modal-compra">
+        <div class="compra-modal-content">
+            <h3 id="compra-titulo">Producto</h3>
+            
+            <div class="cantidad-selector">
+                <label>Medio Líquido</label>
+                <div style="font-size: 0.88em; color: #555; margin-bottom: 10px;">Rendimiento aproximado: 4 semanas</div>
+                <div class="cantidad-controls">
+                    <button class="cantidad-btn" onclick="cambiarCantidad('liquido', -1)">−</button>
+                    <input type="number" id="cantidad-liquido" value="0" readonly>
+                    <button class="cantidad-btn" onclick="cambiarCantidad('liquido', 1)">+</button>
+                </div>
+                <div style="margin-top: 10px; text-align: right; color: #24594a; font-weight: 600;">
+                    Subtotal: $<span id="subtotal-liquido">0</span> MXN
+                </div>
+            </div>
+            
+            <div class="cantidad-selector">
+                <label>Cápsulas</label>
+                <div style="font-size: 0.88em; color: #555; margin-bottom: 10px;">Rendimiento aproximado: 5 semanas</div>
+                <div class="cantidad-controls">
+                    <button class="cantidad-btn" onclick="cambiarCantidad('capsulas', -1)">−</button>
+                    <input type="number" id="cantidad-capsulas" value="0" readonly>
+                    <button class="cantidad-btn" onclick="cambiarCantidad('capsulas', 1)">+</button>
+                </div>
+                <div style="margin-top: 10px; text-align: right; color: #24594a; font-weight: 600;">
+                    Subtotal: $<span id="subtotal-capsulas">0</span> MXN
+                </div>
+            </div>
+            
+            <div style="background: #3b7c6c; color: white; padding: 15px; border-radius: 8px; margin: 15px 0; text-align: right;">
+                <p style="margin: 0; font-size: 0.9em; opacity: 0.9;">Total a pagar:</p>
+                <p style="margin: 0; font-size: 1.8em; font-weight: bold;">$<span id="total-modal">0</span> MXN</p>
+            </div>
+            
+            <div class="compra-btn-container">
+                <button class="compra-btn-cancel" onclick="cerrarModalCompra()">Cancelar</button>
+                <button class="compra-btn-agregar" onclick="agregarAlCarrito()">Agregar al Carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="carrito.js"></script>
+    <script src="carrusel.js"></script>
+</body>
+</html>
